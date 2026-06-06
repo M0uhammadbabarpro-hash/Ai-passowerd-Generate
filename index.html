@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🔐 AI Password Generator</h1>
+
+        <p class="subtitle">
+            Generate ultra-strong passwords with AI intelligence
+        </p>
+
+        <div class="password-box">
+            <input
+                type="text"
+                id="password"
+                placeholder="Type your password or click Generate"
+            >
+        </div>
+
+        <div class="buttons">
+            <button id="generateBtn">
+                Generate Strong Password
+            </button>
+
+            <button id="copyBtn">
+                Copy Password
+            </button>
+        </div>
+
+        <div class="strength-bar">
+            <div id="strengthFill"></div>
+        </div>
+
+        <h2 id="strengthText">Waiting...</h2>
+
+        <div class="score-box">
+            Security Score:
+            <span id="score">0</span>/100
+        </div>
+
+        <div class="analysis">
+
+            <h3>✨ AI Security Analysis</h3>
+
+            <ul id="feedback">
+                <li>Generate or enter a password to analyze.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
